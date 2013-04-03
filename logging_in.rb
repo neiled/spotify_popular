@@ -74,12 +74,10 @@ username = prompt("Enter a Spotify username: ")
 
       tracks.sort!.reverse!
 
-      if playlist.name.include? "Best" then
+      puts "======================================="
+      puts playlist.name
 
-        puts playlist.name
-
-        tracks.each do |t|
-          puts t
-        end
+      tracks[0...10].each do |t|
+        puts t
       end
     end
